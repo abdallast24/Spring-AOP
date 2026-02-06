@@ -16,12 +16,12 @@ The purpose of this repository is to track my progress and serve as a personal r
 - execution(String getAllPosts()) //public is not a must
 - execution(String com.spring.dao.PostService.getAllPosts()) // full path
 - execution(void getAllPosts()) //u can determine the return type
-- "execution(* getAllPosts())" //any return type for a method called getAllPosts()
-- "execution(* getAll*())" //any return type for method called getAllblablaanything()
+- execution(* getAllPosts()) //any return type for a method called getAllPosts()
+- execution(* getAll*()) //any return type for method called getAllblablaanything()
 - execution(* getAll*(com.spring.model.User)) // giving full path of parameter is a must if there is a parameter
-- "execution(* getAll*(com.spring.model.User,..))" // second parameter is any parameter or no more params
-- "execution(* getAll*(..))" // any param or zero params
-- "execution(* com.spring.dao.*.*(..))" //any class in com.spring.dao and any mehod in it which have any params
+- execution(* getAll*(com.spring.model.User,..)) // second parameter is any parameter or no more params
+- execution(* getAll*(..)) // any param or zero params
+- execution(* com.spring.dao.*.*(..)) //any class in com.spring.dao and any mehod in it which have any params
 
 [
 
